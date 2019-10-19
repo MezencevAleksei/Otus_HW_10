@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PieChartPackege",
+        "repositoryURL": "https://github.com/MezencevAleksei/PieChartPackege.git",
+        "state": {
+          "branch": null,
+          "revision": "039f154ef782a9ab3d39c2c9380144bb46931e87",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

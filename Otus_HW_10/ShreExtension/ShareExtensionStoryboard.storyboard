@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share Extension View Controller-->
+        <scene sceneID="kGe-JC-I05">
+            <objects>
+                <viewController storyboardIdentifier="ShareExtensionViewController" id="Wtz-M1-O6C" customClass="ShareExtensionViewController" customModule="Otus_HW_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQV-zb-zDP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-C8-kNX">
+                                <rect key="frame" x="20" y="44" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zfc-YL-RUQ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Français"/>
+                                    <segment title="English"/>
+                                    <segment title="汉语"/>
+                                </segments>
+                                <connections>
+                                    <action selector="languageDidChange:" destination="Wtz-M1-O6C" eventType="valueChanged" id="L9e-Cp-1Uy"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNO-Xc-VvO">
+                                <rect key="frame" x="20" y="92" width="374" height="770"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rNO-Xc-VvO" firstAttribute="top" secondItem="MYl-C8-kNX" secondAttribute="bottom" constant="8" id="BH8-NL-4o0"/>
+                            <constraint firstItem="QcB-9g-eAc" firstAttribute="trailing" secondItem="rNO-Xc-VvO" secondAttribute="trailing" constant="20" id="DYX-Ui-jq3"/>
+                            <constraint firstItem="rNO-Xc-VvO" firstAttribute="bottom" secondItem="QcB-9g-eAc" secondAttribute="bottom" id="EWg-nh-eWr"/>
+                            <constraint firstItem="MYl-C8-kNX" firstAttribute="leading" secondItem="QcB-9g-eAc" secondAttribute="leading" constant="20" id="KOg-b4-xgh"/>
+                            <constraint firstItem="MYl-C8-kNX" firstAttribute="top" secondItem="QcB-9g-eAc" secondAttribute="top" id="Nq3-Dg-eSt"/>
+                            <constraint firstItem="rNO-Xc-VvO" firstAttribute="top" secondItem="MYl-C8-kNX" secondAttribute="bottom" constant="8" id="Nsr-um-8HE"/>
+                            <constraint firstItem="QcB-9g-eAc" firstAttribute="trailing" secondItem="MYl-C8-kNX" secondAttribute="trailing" constant="20" id="QTg-cW-bXv"/>
+                            <constraint firstItem="rNO-Xc-VvO" firstAttribute="leading" secondItem="QcB-9g-eAc" secondAttribute="leading" constant="20" id="jjV-Wg-fkK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QcB-9g-eAc"/>
+                    </view>
+                    <connections>
+                        <outlet property="LanguageSegment" destination="MYl-C8-kNX" id="yNL-im-YrD"/>
+                        <outlet property="textLabel" destination="rNO-Xc-VvO" id="KaN-ma-A8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qop-2M-Bis" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="24.776785714285712"/>
+        </scene>
+    </scenes>
+</document>

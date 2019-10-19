@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/alex/Documents/OTUS/Домашка 7 вторая попытка/HW_7/Otus_HW_7/Otus_HW_7/Dependencies/.build/x86_64-apple-macosx/debug/PieChartPackege.build/master.swiftdeps"
+  },
+  "/Users/alex/Documents/OTUS/Домашка 7 вторая попытка/HW_7/Otus_HW_7/Otus_HW_7/Dependencies/.build/checkouts/PieChartPackege/Sources/PieChartPackege/PieChartPackege.swift": {
+    "dependencies": "/Users/alex/Documents/OTUS/Домашка 7 вторая попытка/HW_7/Otus_HW_7/Otus_HW_7/Dependencies/.build/x86_64-apple-macosx/debug/PieChartPackege.build/PieChartPackege.d",
+    "object": "/Users/alex/Documents/OTUS/Домашка 7 вторая попытка/HW_7/Otus_HW_7/Otus_HW_7/Dependencies/.build/x86_64-apple-macosx/debug/PieChartPackege.build/PieChartPackege.swift.o",
+    "swiftmodule": "/Users/alex/Documents/OTUS/Домашка 7 вторая попытка/HW_7/Otus_HW_7/Otus_HW_7/Dependencies/.build/x86_64-apple-macosx/debug/PieChartPackege.build/PieChartPackege~partial.swiftmodule",
+    "swift-dependencies": "/Users/alex/Documents/OTUS/Домашка 7 вторая попытка/HW_7/Otus_HW_7/Otus_HW_7/Dependencies/.build/x86_64-apple-macosx/debug/PieChartPackege.build/PieChartPackege.swiftdeps"
+  }
+}

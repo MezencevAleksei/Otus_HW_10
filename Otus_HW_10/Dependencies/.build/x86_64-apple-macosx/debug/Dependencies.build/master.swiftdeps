@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "2818cf5034bac6f30f9cad68d1c20f43"
+build_time: [1567529078, 678779000]
+inputs:
+  "/Users/alex/Documents/OTUS/\u0414\u043E\u043C\u0430\u0448\u043A\u0430 7 \u0432\u0442\u043E\u0440\u0430\u044F \u043F\u043E\u043F\u044B\u0442\u043A\u0430/HW_7/Otus_HW_7/Otus_HW_7/Dependencies/Sources/Dependencies/Dependencies.swift": [1567528777, 545869499]

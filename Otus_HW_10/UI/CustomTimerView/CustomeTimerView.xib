@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="CustomeTimerView" customModule="Otus_HW_8" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1g6-HI-Vvd">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="220"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="it8-ib-7Cd" customClass="PieChartView" customModule="Otus_HW_8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeT-cc-II6">
+                                <rect key="frame" x="0.0" y="202" width="200" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31911305029999998" green="0.82308533029999997" blue="0.79082335849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="it8-ib-7Cd" firstAttribute="top" secondItem="1g6-HI-Vvd" secondAttribute="top" id="2Bc-BB-pAm"/>
+                            <constraint firstItem="jeT-cc-II6" firstAttribute="top" secondItem="it8-ib-7Cd" secondAttribute="bottom" priority="999" constant="2" id="88s-2q-KK6"/>
+                            <constraint firstItem="it8-ib-7Cd" firstAttribute="leading" secondItem="1g6-HI-Vvd" secondAttribute="leading" id="Dae-ir-YCN"/>
+                            <constraint firstAttribute="bottom" secondItem="jeT-cc-II6" secondAttribute="bottom" id="JfO-BV-VZV"/>
+                            <constraint firstAttribute="trailing" secondItem="jeT-cc-II6" secondAttribute="trailing" id="XZC-uM-5YL"/>
+                            <constraint firstAttribute="trailing" secondItem="it8-ib-7Cd" secondAttribute="trailing" id="YU4-GF-n7N"/>
+                            <constraint firstItem="jeT-cc-II6" firstAttribute="leading" secondItem="1g6-HI-Vvd" secondAttribute="leading" id="c42-Yq-PDv"/>
+                            <constraint firstItem="jeT-cc-II6" firstAttribute="top" secondItem="it8-ib-7Cd" secondAttribute="bottom" priority="999" constant="2" id="jT7-cp-JEA"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1g6-HI-Vvd" secondAttribute="trailing" id="Of8-eL-13z"/>
+                <constraint firstAttribute="bottom" secondItem="1g6-HI-Vvd" secondAttribute="bottom" id="vOx-V7-zzM"/>
+                <constraint firstItem="1g6-HI-Vvd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xg7-6F-kTW"/>
+                <constraint firstItem="1g6-HI-Vvd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zfj-Sm-bvI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="200" height="180"/>
+            <connections>
+                <outlet property="PieChartView" destination="it8-ib-7Cd" id="BP3-Dc-P20"/>
+                <outlet property="timerLabel" destination="jeT-cc-II6" id="0Gq-9c-CXg"/>
+            </connections>
+            <point key="canvasLocation" x="-7.2463768115942031" y="179.46428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
